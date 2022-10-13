@@ -25,7 +25,7 @@ public class ConsumerService {
             factory.connect(mqttClient);
             mqttClient.subscribe(topic, listener);
         } catch (MqttException e) {
-            logger.error("订阅主题失败，主题: {}", topic);
+            logger.error("订阅主题失败，主题: {}", topic, e);
         }
     }
 }

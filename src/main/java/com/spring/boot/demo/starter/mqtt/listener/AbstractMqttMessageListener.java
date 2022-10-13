@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * 消息回调 抽象类
- * 开放receiveMessage抽象方法提供给业务方自定义实现，处理逻辑
+ * 开放receiveMessage抽象方法给业务方自定义实现，处理逻辑
  */
 public abstract class AbstractMqttMessageListener implements IMqttMessageListener {
     private static final Logger logger = LoggerFactory.getLogger(AbstractMqttMessageListener.class);

@@ -54,7 +54,7 @@ public class ConsumerConfiguration implements CommandLineRunner {
                 factory.connect(mqttClient);
                 mqttClient.subscribe(topic, v);
             } catch (MqttException e) {
-                logger.error("订阅主题失败，主题: {}", topic);
+                logger.error("订阅主题失败，主题: {}", topic, e);
             }
         });
     }
